@@ -570,6 +570,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mb-2{
+  margin-bottom: 0.5rem;
+}
+
 .flex{
   display: flex;
 }
@@ -673,6 +677,16 @@ video {
   line-height: 2.25rem;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -714,6 +728,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-transform{
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .duration-100{
   transition-duration: 100ms;
 }
@@ -735,6 +755,11 @@ video {
 .hover\:text-xl:hover{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.hover\:text-2xl:hover{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .hover\:text-gray-500:hover{
