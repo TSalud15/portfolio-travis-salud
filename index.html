@@ -3,39 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./output.css">
     <title>Travis Salud</title>
 </head>
-<body>
-    <header class="flex justify-between items-center py-4 px-6">
-        <h1 class="logo">LOGO</h1>
+<body class="font-poppins py-4 px-6 mx-auto">
+    <header class="flex justify-between items-center">
+        <h1 class="logo">Travis Salud</h1>
         <nav class="hidden md:flex">
             <ul class="flex gap-4">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Education</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Experience</a></li>
-                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
-        <button id="themeToggle">Dark</button>
+        <a href="#">Contact Me</a>
     </header>
     <main>
-        <div class="flex flex-col justify-center items-center">
+        <div class="h-screen flex flex-row justify-center items-center gap-3">
             <div>
-                <img src="/assets/images/travis-profile-pic.jpg" alt="Profile Picture" class="rounded-full w-[200px]">
+                <img src="/assets/images/travis-profile-pic.jpg" alt="Profile Picture" class="rounded-full w-[500px]">
             </div>
-            <h1>Hello! I'm Travis Salud 👋</h1>
-            <p>Software Engineer</p>
             <div>
-                <a href="#">LinkedIn</a>
-                <a href="#">Github</a>
-                <a href="#">Email</a>
+                <h1 class="text-6xl">Hello! I'm Travis Salud👋</h1>
+                <p class="text-4xl">Software Engineer</p>
+                <div class="flex gap-2">
+                    <a href="#"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    <a href="#"><i class="fa-brands fa-github fa-2xl"></i></a>
+                    <a href="#"><i class="fa-solid fa-envelope fa-2xl"></i></a>
+                </div>
+                <div>
+                    <a href="">Contact Me</a>
+                    <a href="#">Resume</a>
+                </div>
             </div>
-            <a href="#">Contact Me</a>
         </div>
         <section id="about">
             <div>About</div>
+        </section>
+        <section id="skills">
+            <div>Skills</div>
         </section>
         <section id="education">
             <div>Education</div>
