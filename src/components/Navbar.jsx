@@ -25,7 +25,7 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className="relative flex justify-between items-center pt-6 px-4 text-white w-full">
+        <nav className="relative flex justify-between items-center pt-6 px-8 text-white w-full">
             <div>
                 <h1 className="text-2xl">Travis Salud</h1>
             </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
 
             {menuOpen && (
                 <ul
-                    className={`absolute md:hidden top-14 left-0 w-full backdrop-blur flex flex-col items-center gap-6 font-semibold text-lg
+                    className={`absolute md:hidden top-24 left-0 w-full backdrop-blur flex flex-col items-center gap-6 font-semibold text-lg
                 }`}
                 >
                     {links.map(({ id, link }) => {
