@@ -1,9 +1,23 @@
+import { useEffect, useState } from "react";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
-import { useState } from "react";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const [scrollDisabled, setScrollDisabled] = useState(false);
+
+    const handleMenuClick = () => {
+        setMenuOpen(!menuOpen);
+        setScrollDisabled(!scrollDisabled);
+    };
+
+    useEffect(() => {
+        if (scrollDisabled) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+    });
 
     const links = [
         {
@@ -43,7 +57,7 @@ const Navbar = () => {
             </ul>
             <div
                 className="cursor-pointer pr-4 z-10 text-slate-300 hover:text-white duration-200 md:hidden"
-                onClick={() => setMenuOpen(!menuOpen)}
+                onClick={handleMenuClick}
             >
                 {menuOpen ? (
                     <FaTimes size={25} />

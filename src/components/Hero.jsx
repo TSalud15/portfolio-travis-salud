@@ -18,30 +18,38 @@ const Hero = () => {
                             <a
                                 href="https://www.linkedin.com/in/travis-salud/"
                                 className="text-slate-300 hover:scale-110 hover:text-white duration-200"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <FaLinkedin size={30} />
                             </a>
                             <a
                                 href="https://github.com/TSalud15"
                                 className="text-slate-300 hover:scale-110 hover:text-white duration-200"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <FaSquareGithub size={30} />
                             </a>
                             <a
                                 href="mailto: saludtravis15@gmail.com"
                                 className="text-slate-300 hover:scale-110 hover:text-white duration-200"
+                                target="_blank"
+                                rel="noreferrer"
                             >
                                 <FaEnvelope size={30} />
                             </a>
                         </div>
                         <div>
                             {/* ADD RESUME */}
-                            <button className="group text-white w-fit px-6 py-3 my-3 rounded-md flex items-center bg-gradient-to-r from-cyan-500 to-blue-500">
-                                Resume
-                                <span className="group-hover:rotate-90 duration-200">
-                                    <MdKeyboardArrowRight />
-                                </span>
-                            </button>
+                            <a href="" download={true}>
+                                <button className="group text-white w-fit px-6 py-3 my-3 rounded-md flex items-center bg-gradient-to-r from-cyan-500 to-blue-500">
+                                    Resume
+                                    <span className="group-hover:rotate-90 duration-200">
+                                        <MdKeyboardArrowRight />
+                                    </span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
