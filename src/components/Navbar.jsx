@@ -52,18 +52,23 @@ const Navbar = () => {
                 )}
             </div>
 
+            {/* Mobile navbar */}
             {menuOpen && (
                 <ul
-                    className={`absolute md:hidden top-24 left-0 w-full backdrop-blur flex flex-col items-center gap-6 font-semibold text-lg
-                }`}
+                    className={`absolute md:hidden top-24 left-0 w-full h-screen backdrop-blur flex flex-col items-center gap-6 font-semibold text-lg`}
                 >
                     {links.map(({ id, link }) => {
                         return (
                             <li
                                 key={id}
-                                className="w-full p-4 capitalize text-center text-slate-300 cursor-pointer hover:text-white duration-200"
+                                className="w-full p-4 capitalize text-center"
                             >
-                                <a href="#">{link}</a>
+                                <a
+                                    href="#"
+                                    className="text-slate-300 hover:text-white duration-200 cursor-pointer"
+                                >
+                                    {link}
+                                </a>
                             </li>
                         );
                     })}
