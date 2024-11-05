@@ -3,10 +3,12 @@ const About = () => {
         <section name="about" className="w-full h-screen text-white">
             <div className="max-w-screen w-full h-full flex flex-col py-4 px-6 mx-auto">
                 <div className="pb-8">
-                    <h1 className="text-4xl font-bold inline">About</h1>
+                    <h1 className="text-2xl md:text-4xl font-bold inline">
+                        About
+                    </h1>
                 </div>
 
-                <p className="mt-4">
+                <p className="mt-4 text-md md:text-lg">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation

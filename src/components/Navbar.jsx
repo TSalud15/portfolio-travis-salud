@@ -11,6 +11,7 @@ const Navbar = () => {
         setScrollDisabled(!scrollDisabled);
     };
 
+    // Disable scrolling when menu is open
     useEffect(() => {
         if (scrollDisabled) {
             document.body.style.overflow = "hidden";
@@ -26,11 +27,11 @@ const Navbar = () => {
         },
         {
             id: 2,
-            link: "projects",
+            link: "skills",
         },
         {
             id: 3,
-            link: "skills",
+            link: "projects",
         },
         {
             id: 4,

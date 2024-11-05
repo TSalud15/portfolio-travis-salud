@@ -7,7 +7,7 @@ const Hero = () => {
         <section name="hero" className="h-screen w-full">
             <div className="max-w-screen h-full flex flex-col justify-center items-center px-4 md:flex-row">
                 <div className="text-white">
-                    <h1 className="text-5xl lg:text-6xl">
+                    <h1 className="text-4xl lg:text-6xl">
                         Hi, I&apos;m Travis Salud!👋
                     </h1>
                     <h2 className="text-lg lg:text-2xl">
