@@ -42,6 +42,24 @@ const Skills = () => {
             skill: "Git",
             style: "hover:shadow-red-400",
         },
+        {
+            id: 8,
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
+            skill: "NodeJS",
+            style: "hover:shadow-green-400",
+        },
+        {
+            id: 9,
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+            skill: "Express",
+            style: "hover:shadow-white",
+        },
+        {
+            id: 10,
+            src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
+            skill: "MongoDB",
+            style: "hover:shadow-green-400",
+        },
     ];
 
     return (
